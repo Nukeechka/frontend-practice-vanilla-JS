@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="display">
+          <input type="text" class="display-input" readonly />
+        </div>
+        <div class="interface">
+          <div class="interface__wrapper">
+            <div class="actions">
+              <button class="btn btn-clear">AC</button>
+              <button class="btn btn-abs">±</button>
+              <button onclick="determineOperator('%')" class="btn btn-operator">
+                %
+              </button>
+            </div>
+            <div class="digits">
+              <button onclick="digitHandler('7')" class="btn btn-digit">
+                7
+              </button>
+              <button onclick="digitHandler('8')" class="btn btn-digit">
+                8
+              </button>
+              <button onclick="digitHandler('9')" class="btn btn-digit">
+                9
+              </button>
+              <button onclick="digitHandler('4')" class="btn btn-digit">
+                4
+              </button>
+              <button onclick="digitHandler('5')" class="btn btn-digit">
+                5
+              </button>
+              <button onclick="digitHandler('6')" class="btn btn-digit">
+                6
+              </button>
+              <button onclick="digitHandler('3')" class="btn btn-digit">
+                3
+              </button>
+              <button onclick="digitHandler('2')" class="btn btn-digit">
+                2
+              </button>
+              <button onclick="digitHandler('1')" class="btn btn-digit">
+                1
+              </button>
+              <button onclick="digitHandler('0')" class="btn btn-digit">
+                0
+              </button>
+              <button onclick="digitHandler('.')" class="btn btn-digit">
+                .
+              </button>
+            </div>
+          </div>
+
+          <div class="operators">
+            <button onclick="determineOperator('/')" class="btn btn-operator">
+              /
+            </button>
+            <button onclick="determineOperator('*')" class="btn btn-operator">
+              *
+            </button>
+            <button onclick="determineOperator('-')" class="btn btn-operator">
+              -
+            </button>
+            <button onclick="determineOperator('+')" class="btn btn-operator">
+              +
+            </button>
+            <button onclick="calculateResult()" class="btn btn-operator">
+              =
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

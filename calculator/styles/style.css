@@ -1,0 +1,103 @@
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-color: #111;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+}
+
+.display-input {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  text-align: right;
+
+  &:focus-visible {
+    outline: none;
+  }
+}
+
+.btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  transition: 0.1s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.interface {
+  display: flex;
+  gap: 5px;
+}
+
+.interface__wrapper {
+  display: flex;
+  flex-flow: column;
+  gap: 5px;
+}
+
+.digits {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.digits > .btn {
+  width: 30%;
+  flex-grow: 1;
+}
+
+.digits:last-child {
+  flex-shrink: 0;
+}
+
+.operators {
+  display: flex;
+  flex-flow: column;
+  gap: 5px;
+}
+
+.actions {
+  width: 100%;
+  display: flex;
+  gap: 5px;
+}
+
+.actions > .btn {
+  flex: 1;
+}
+
+.actions > .btn {
+  background-color: #ccc;
+}
+
+.operators .btn-operator {
+  background-color: rgb(255, 183, 0);
+  color: #fff;
+}
+
+.btn-digit {
+  background-color: #555;
+  color: #fff;
+}
