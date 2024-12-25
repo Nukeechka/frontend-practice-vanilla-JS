@@ -1,4 +1,4 @@
-# js-frontend-retake
+# js-frontend
 
 List of projects:
 
